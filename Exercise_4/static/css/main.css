@@ -1,0 +1,25 @@
+nav,header,footer,article { display:block; }
+
+#nav {
+  background:#c00;
+  padding:10px;
+  overflow:hidden; 
+}
+#nav ul {
+  list-style:none;
+  margin:0;
+  padding:0; 
+}
+#nav li {
+  float:left; 
+}
+#nav li a {
+  color:#fff;
+  padding:0 10px; 
+}
+
+@media only screen and (max-width:480px) {
+  body {
+    background:#000; 
+  }
+}
