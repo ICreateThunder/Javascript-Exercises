@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./static/js/utils.js"></script>
+    <style>
+      table, th, td {
+        border:1px solid black;
+      }
+      input {
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <td><label for="numA">First Number: </label></td>
+        <td><input type="text" value="2" id="numA"></td>
+      </tr>
+      <tr>
+        <td><label for="numB">Second Number: </label></td>
+        <td><input type="text" value="3" id="numB"></td>
+      </tr>
+      <tr>
+        <td><label for="numC">Third Number: </label></td>
+        <td><input type="text" value="7" id="numC"></td>
+      </tr>
+      <tr>
+        <td><label>Answer: </label></td>
+        <td><label id="result">[RESULT]</label></td>
+      </tr>
+    </table>
+    <input type="button" value="Sum all numbers" onclick="addNumbers(3)" />
+    <input type="button" value="Subtract all numbers" onclick="subNumbers(3)" />
+  </body>
+</html>
