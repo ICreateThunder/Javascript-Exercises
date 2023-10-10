@@ -16,5 +16,12 @@
       document.write("<strong>The Browser's \"User Agent \" is: </strong>" + browserAgent + "<br/>");
       document.write("<strong>The Browser's platform is: </strong>" + platform + "<br/>");
     </script>
+    <h2>Browser plugin detection</h2>
+    <script type="text/javascript">
+      var count = navigator.plugins.length;
+      for (var i = 0; i < navigator.plugins.length; i++) {
+        document.write(`<p><span style=\"color:red;\">Plug-in No. ${i + 1} ::</span>${navigator.plugins[i].name}<br><span style=\"color:red;\">Location ::</span> ${navigator.plugins[i].filename}</p>`);
+      }
+    </script>
   </body>
 </html>
