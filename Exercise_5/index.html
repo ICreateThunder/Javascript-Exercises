@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="./static/css/main.css" rel="stylesheet">
+  </head>
+  <body onclick="javascript: alert('bubbled to body');">
+    <div>
+      <h1>Demonstration of Bubbling in Javascript</h1>
+    </div>
+    <form onclick="javascript: alert('bubbled to form');">
+      <input onclick="javascript: alert('button clicked, bubbling up to follow');" value="Click this button to bubble!" type="button" />
+    </form>
+    <script src="./static/js/utils.js"></script>
+    <a href="trycatch.html" onclick="javascript: event.stopPropagation();">Click here to view Error Handling</a>
+  </body>
+</html>
